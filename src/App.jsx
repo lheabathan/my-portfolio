@@ -1,4 +1,7 @@
+import profile from './assets/profile.png';
 import './style.css';
+
+
 
 function App() {
   
@@ -55,6 +58,12 @@ function App() {
           <div className="circle circle-lavender">
             <span>✿</span>
           </div>
+
+          <img
+           src={profile}
+           alt="My profile"
+           className="profile-picture"
+          />
 
           <p className="art-caption">
             learning, creating & growing
@@ -231,31 +240,66 @@ function App() {
 
 
 {/* Contact Section */}
-<section className="contact-section" id="contact">
-  <div className="contact-content">
-    <span className="contact-label">LET'S CONNECT</span>
+<section id="contact" className="contact-section">
+  <p className="section-label">LET'S CONNECT</p>
+  <h2>I'd love to hear from you!</h2>
+  <p className="contact-description">
+    Have a question or want to connect? Feel free to message me.
+  </p>
 
-    <h2>I'd love to hear from you!</h2>
+  <div className="contact-icons">
+    {/* Messenger */}
+    <a
+      href="https://m.me/bathanlhea20"
+      target="_blank"
+      rel="noreferrer"
+      className="contact-icon messenger-icon"
+      aria-label="Message me on Messenger"
+      title="Messenger"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12 2C6.48 2 2 6.15 2 11.27c0 2.92 1.47 5.52 3.77 7.2V22l3.44-1.89c.89.25 1.83.38 2.79.38 5.52 0 10-4.15 10-9.22S17.52 2 12 2Zm1 12.4-2.55-2.72-4.97 2.72 5.47-5.81 2.61 2.72 4.91-2.72L13 14.4Z"
+          fill="currentColor"
+        />
+      </svg>
+    </a>
 
-    <p>
-      Have a question, want to share an idea, or just
-      want to say hello? Feel free to reach out.
-    </p>
-
+    {/* Email */}
     <a
       href="mailto:bathanlhealandicho@gmail.com"
-      className="contact-button"
+      className="contact-icon email-icon"
+      aria-label="Send me an email"
+      title="Email"
     >
-      Say Hello ✉
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm9 8L4 7v10h16V7l-8 6Zm0-2 7-4H5l7 4Z"
+          fill="currentColor"
+        />
+      </svg>
     </a>
-  </div>
 
-  <div className="contact-decoration">
-    <span className="contact-star star-one">✦</span>
-    <span className="contact-star star-two">✿</span>
-    <span className="contact-star star-three">♡</span>
+    {/* GitHub */}
+    <a
+      href="https://github.com/lheabathan"
+      target="_blank"
+      rel="noreferrer"
+      className="contact-icon github-icon"
+      aria-label="Visit my GitHub profile"
+      title="GitHub"
+    >
+     <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+       fill="currentColor"
+       d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.53v-2.05c-3.1.67-3.76-1.32-3.76-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.23.93.1-.72.39-1.21.7-1.49-2.47-.28-5.07-1.24-5.07-5.51 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.12 2.96.71.78 1.14 1.78 1.14 3 0 4.28-2.6 5.23-5.08 5.5.4.35.75 1.03.75 2.08V22c0 .29.2.63.76.52A11.1 11.1 0 0 0 12 .9Z"
+      />
+    </svg>
+    </a>
+
   </div>
 </section>
+
 
 
 
